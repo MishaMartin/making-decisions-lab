@@ -78,9 +78,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
   Loop through the 'family' array and console.log every item.
 */
 
-for(let i = 0; i <= 4; i++) {
-  console.log(family [i])
-};
+// for(let i = 0; i <= 4; i++) {
+//   console.log(family [i])
+// };
 
 
 
@@ -95,7 +95,11 @@ let evensArr = []
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
 
-//Code Here
+let a = nums.splice(1,1);
+let b = nums.splice(2,3);
+let c = nums.splice(4,2);
+evensArr.push (a,b,c);
+console.log(evensArr);
 
 
 

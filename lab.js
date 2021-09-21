@@ -168,7 +168,6 @@ console.log(someNum);
 if(myFavoriteNumbers.length - 1 < 7){
 console.log('There are not enough elements in this array')
 } else if(myFavoriteNumbers.length - 1 >= 7){
-  // someNum = myFavoriteNumbers[6]
   myFavoriteNumbers.splice(6,1,someNum)
 }; 
 console.log(myFavoriteNumbers);

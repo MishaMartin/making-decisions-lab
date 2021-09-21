@@ -135,14 +135,14 @@ var score = 74
 
 */
 
-let changeMyMind = true;
-console.log(!changeMyMind);
+// let changeMyMind = true;
+// console.log(!changeMyMind);
 
 
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
-let changeMyMind = !false;
-console.log(changeMyMind);
+// let changeMyMind = !false;
+// console.log(changeMyMind);
 
 
 
@@ -150,7 +150,7 @@ console.log(changeMyMind);
 ////////// PROBLEM 10 //////////
 
 // Do not edit the code below.
-var myFavoriteNumbers = [4,8,12,16,20,24,15,45];
+var myFavoriteNumbers = [4,8,12,16,20,24];
 // Do not edit the code above.
 
 /*
@@ -169,8 +169,9 @@ if(myFavoriteNumbers.length - 1 < 7){
 console.log('There are not enough elements in this array')
 } else if(myFavoriteNumbers.length - 1 >= 7){
   myFavoriteNumbers.splice(6,1,someNum)
+  console.log(myFavoriteNumbers);
 }; 
-console.log(myFavoriteNumbers);
+
 
 
 ////////// PROBLEM 11 //////////
@@ -181,7 +182,12 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
-//Code Here
+// if(myFavoriteNumbers.length - 1 < 7){
+//   console.log('There are not enough elements in this array')
+//   } else if(myFavoriteNumbers.length - 1 >= 7){
+//     myFavoriteNumbers.splice(6,1,someNum)
+//   }; 
+//   console.log(myFavoriteNumbers);
 
 
 ////////// PROBLEM 12 //////////

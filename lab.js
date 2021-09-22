@@ -6,13 +6,13 @@
   If it is not, console-log "Coding has it's challenges."
 */
 
-// let lovesCode = true
+let lovesCode = true
 
-// if(lovesCode === true) {
-//   console.log('Ilove to code!')
-// } else {
-//   console.log('Coding has it\'s challenges.')
-// }
+if(lovesCode === true) {
+  console.log('Ilove to code!')
+} else {
+  console.log('Coding has it\'s challenges.')
+}
 
 // For problems 2-3 use the following lines of code:
 var amysAge = 29
@@ -26,13 +26,13 @@ var brittanisBirthYear = 1986
   Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
 */
 
-// if(amysAge > brittanisAge) {
-//   console.log('Amy is older')
-// } else if(brittanisAge > amysAge) {
-//   console.log('Brittany is older.')
-// } else {
-//   console.log('They are the same age.')
-// }
+if(amysAge > brittanisAge) {
+  console.log('Amy is older')
+} else if(brittanisAge > amysAge) {
+  console.log('Brittany is older.')
+} else {
+  console.log('They are the same age.')
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -41,11 +41,11 @@ var brittanisBirthYear = 1986
   Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
 */
 
-// if(amysBirthYear === brittanisBirthYear) {
-//   console.log('Amy and Brittani were born in the same year')
-// } else {
-//   console.log('Amy and Brittani were not born in the same year')
-// }
+if(amysBirthYear === brittanisBirthYear) {
+  console.log('Amy and Brittani were born in the same year')
+} else {
+  console.log('Amy and Brittani were not born in the same year')
+}
 
 
 
@@ -57,16 +57,16 @@ var arr = [10,20,30,40,50,60]
   Create a variable named 'firstItem' and set it equal to the first value of the 'arr' array.
 */
 
-// let firstItem = arr[0];
-// console.log(firstItem);
+let firstItem = arr[0];
+console.log(firstItem);
 
 ////////// PROBLEM 5 //////////
 /*
   Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
 */
 
-// var lastItemRemoved = arr.pop();
-// console.log(lastItemRemoved);
+var lastItemRemoved = arr.pop();
+console.log(lastItemRemoved);
 
 ////////// PROBLEM 6 //////////
 
@@ -78,9 +78,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
   Loop through the 'family' array and console.log every item.
 */
 
-// for(let i = 0; i <= 4; i++) {
-//   console.log(family [i])
-// };
+for(let i = 0; i <= 4; i++) {
+  console.log(family [i])
+};
 
 
 
@@ -95,11 +95,12 @@ let evensArr = []
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
 
-// let a = nums.splice(1,1);
-// let b = nums.splice(2,3);
-// let c = nums.splice(4,2);
-// evensArr.push (a,b,c);
-// console.log(evensArr);
+for(let i = 0; i < nums.length; i++) {
+  if(nums[i] % 2 === 0) {
+    evensArr.push(nums[i])
+  }
+}
+console.log(evensArr);
 
 
 
@@ -113,17 +114,17 @@ var score = 74
   Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console-log an 'A', between 80 and 89, console-log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console-log an 'F'.
 */
 
-// if(score >= 90) {
-//   console.log('A')
-// } else if(score <90 && score >= 80){
-//   console.log('B')
-// } else if(score < 80 && score >= 70) {
-//   console.log('C')
-// } else if(score < 70 && score >= 60) {
-//   console.log('D')
-// }else if(score < 60) {
-//   console.log('F')
-// };
+if(score >= 90) {
+  console.log('A')
+} else if(score <90 && score >= 80){
+  console.log('B')
+} else if(score < 80 && score >= 70) {
+  console.log('C')
+} else if(score < 70 && score >= 60) {
+  console.log('D')
+}else if(score < 60) {
+  console.log('F')
+};
 
 
 ////////// Intermediate Problems //////////
@@ -135,14 +136,14 @@ var score = 74
 
 */
 
-// let changeMyMind = true;
-// console.log(!changeMyMind);
+let changeMyMind = true;
+console.log(!changeMyMind);
 
 
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
 
-// let changeMyMind = !false;
-// console.log(changeMyMind);
+let changeMyMind = !false;
+console.log(changeMyMind);
 
 
 
@@ -182,12 +183,12 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
-// if(myFavoriteNumbers.length - 1 < 7){
-//   console.log('There are not enough elements in this array')
-//   } else if(myFavoriteNumbers.length - 1 >= 7){
-//     myFavoriteNumbers.splice(6,1,someNum)
-//   }; 
-//   console.log(myFavoriteNumbers);
+for(let i = 0; i < listOfNumbers.length; i++) {
+  if (listOfNumbers[i] % 3 === 0) {
+  console.log(`${listOfNumbers[i]} is divisible by 3`)
+  }
+}
+
 
 
 ////////// PROBLEM 12 //////////
@@ -199,8 +200,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop backwards, starting at the end of the 'letters' array. Console-log every item in the array.
 */
 
-//Code Here
-
+for(let i = letters.length -1; i >= 0; i--) {
+  console.log(letters[i])
+};
 
 ////////// Advanced Problems //////////
 
@@ -220,8 +222,26 @@ If D: "The student is not doing very well."
 If F: "The student is failing."
 If the letter grade is not one of the above letters, console.log 'Not an eligible grade.'
 */
-
-//Code Here
+const expr = letterGrade;
+switch (expr) {
+  case 'A' :
+    console.log('The student is doing excellently.');
+    break;
+  case 'B' :
+    console.log('The student is doing well.');
+    break;
+  case 'C' :
+    console.log('The student is doing alright.');
+    break;
+  case 'D' :
+    console.log('The student is not doing very well.');
+    break;
+  case 'F' :
+    console.log('The student is failing.');
+    break;
+  default :
+    console.log('Not an eligible grade.');
+}
 
 
 
@@ -249,4 +269,14 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
   ...
 */
 
-//Code Here
+for(let i = 0; i < 100; i++) {
+  if(i % 5 === 0 && i % 3 === 0) {
+    console.log('Devmountain')
+  } else if(i % 3 === 0) {
+    console.log('Dev')
+  } else if(i % 5 === 0) {
+    console.log('Mountain')
+  } else {
+    console.log(i)
+  }
+} 
